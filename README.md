@@ -177,4 +177,4 @@ Terraform plan
 
 ![Скриншот 17](https://github.com/Wanderwille/scrinshot/blob/main/web_vm.png)
 
-![Скриншот 18](https://github.com/Wanderwille/scrinshot/blob/main/terraform%20plan.png)
+![Скриншот 18](https://github.com/Wanderwille/scrinshot/blob/main/plan3.png)

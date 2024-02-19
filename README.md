@@ -113,3 +113,62 @@
 ![Скриншот 6](https://github.com/Wanderwille/scrinshot/blob/main/terraform_plan.png)
 
 ## Задание 3
+
+Создал файл 'vms_platform.tf', перенес в него старые переменные, написал новые:
+
+![Скриншот 7](https://github.com/Wanderwille/scrinshot/blob/main/Переменные%20db.png)
+
+![Скриншот 8](https://github.com/Wanderwille/scrinshot/blob/main/переменные%203.png)
+
+![Скриншот 9](https://github.com/Wanderwille/scrinshot/blob/main/обьявление%20переменных2.png)
+
+Так же обьявил переменные для создания новой подсети, что бы ВМ работала в зоне "ru-central1-b"
+
+Но появились проблемы в виде того, что подсети создаются, но при ***terraform apply*** появляется ошибка: 
+
+![Скриншот 10](https://github.com/Wanderwille/scrinshot/blob/main/Ошибка.png)
+
+Terraform plan
+
+![Скриншот 11](https://github.com/Wanderwille/scrinshot/blob/main/terraform%20plan.png)
+
+Возможно проблема в этом месте 
+```
+  network_interface {
+    subnet_id = yandex_vpc_subnet.develop1.id
+    nat       = true
+  }
+```
+Если ***yandex_vpc_subnet.develop1.id*** изменить на ***yandex_vpc_subnet.develop.id***, то все работает
+
+Так же пробовал создать отдельную сеть, но это так же не помогло
+
+## Задание 4
+
+## Ответ:
+
+![Скриншот 12](https://github.com/Wanderwille/scrinshot/blob/main/output22.png)
+
+![Скриншот 13](https://github.com/Wanderwille/scrinshot/blob/main/jasoi%3Bfhsdef%20ahfawnfsa.png)
+
+## Задание 5
+
+## Ответ:
+
+![Скриншот 12](https://github.com/Wanderwille/scrinshot/blob/main/local.png)
+
+![Скриншот 13](https://github.com/Wanderwille/scrinshot/blob/main/local2.png)
+
+![Скриншот 14](https://github.com/Wanderwille/scrinshot/blob/main/Переменные%204.png)
+
+## Задание 6
+
+## Ответ:
+
+![Скриншот 15](https://github.com/Wanderwille/scrinshot/blob/main/zd6.png)
+
+![Скриншот 16](https://github.com/Wanderwille/scrinshot/blob/main/db_vm.png)
+
+![Скриншот 17](https://github.com/Wanderwille/scrinshot/blob/main/web_vm.png)
+
+![Скриншот 18](https://github.com/Wanderwille/scrinshot/blob/main/terraform%20plan.png)

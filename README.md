@@ -143,6 +143,12 @@ Terraform plan
 
 Так же пробовал создать отдельную сеть, но это так же не помогло
 
+Пробовал хардкор значение, но не помогло
+
+![Скриншот Ошибки](https://github.com/Wanderwille/scrinshot/blob/main/zone_b.png)
+
+![Скриншот Ошибки2](https://github.com/Wanderwille/scrinshot/blob/main/zone_b%20-%20ошибка.png)
+
 ## Задание 4
 
 ## Ответ:

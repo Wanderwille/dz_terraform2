@@ -126,28 +126,9 @@
 
 Но появились проблемы в виде того, что подсети создаются, но при ***terraform apply*** появляется ошибка: 
 
-![Скриншот 10](https://github.com/Wanderwille/scrinshot/blob/main/Ошибка.png)
+Задание подправил, получилось исправить 
 
-Terraform plan
-
-![Скриншот 11](https://github.com/Wanderwille/scrinshot/blob/main/terraform%20plan.png)
-
-Возможно проблема в этом месте 
-```
-  network_interface {
-    subnet_id = yandex_vpc_subnet.develop1.id
-    nat       = true
-  }
-```
-Если ***yandex_vpc_subnet.develop1.id*** изменить на ***yandex_vpc_subnet.develop.id***, то все работает
-
-Так же пробовал создать отдельную сеть, но это так же не помогло
-
-Пробовал хардкор значение, но не помогло
-
-![Скриншот Ошибки](https://github.com/Wanderwille/scrinshot/blob/main/zone_b.png)
-
-![Скриншот Ошибки2](https://github.com/Wanderwille/scrinshot/blob/main/zone_b%20-%20ошибка.png)
+![Скриншот 9](https://github.com/Wanderwille/scrinshot/blob/main/изображение_2024-02-20_155839297.png)
 
 ## Задание 4
 

@@ -57,6 +57,7 @@ data "yandex_compute_image" "ubuntu2" {
 resource "yandex_compute_instance" "platform2" {
   name        = var.vm_db_name
   platform_id = var.vm_db_platform
+  zone        = "ru-central1-b"
   metadata = var.metadata_ssh
 
   resources {
@@ -76,7 +77,7 @@ resource "yandex_compute_instance" "platform2" {
   }
   
   network_interface {
-    subnet_id = yandex_vpc_subnet.develop.id
+    subnet_id = yandex_vpc_subnet.develop1.id
     nat       = true
   }
 
